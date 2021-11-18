@@ -1,0 +1,372 @@
+/* row mid blue */
+
+.row-mid-blue {
+  background-color: var(--choco-mid-blue) !important;
+  color: var(--lychee) !important;
+}
+
+.row-mid-blue .navbar-light .navbar-toggler-icon {
+  background-image: url("../img/hamburger-blue.svg") !important;
+}
+
+
+.row-mid-blue .btn.btn-primary:hover, .row-mid-blue a.nav-link.login:hover {
+  background-color: var(--lychee) !important;
+  color: var(--choco-mid-blue) !important;
+}
+
+.row-mid-blue .navbar-nav .nav-item a.nav-link.login:hover, .row-mid-blue .navbar-nav .nav-item a.nav-link.active, .row-mid-blue .navbar-nav .nav-item a.nav-link:hover {
+  border-bottom: 3px solid var(--lychee) !important;
+}
+
+.row-mid-blue .intro, .row-mid-blue a, .item .row-mid-blue .intro, .item .row-mid-blue h3{
+  color: var(--lychee) !important;
+}
+
+.row-mid-blue .item a:hover {
+  text-decoration: none;
+  color: var(--beige);
+}
+
+.initial-follow.row-mid-blue, .initial-follow.row-mid-blue a, .initial-follow.row-mid-blue .intro {
+  background-color: var(--choco-blue) !important;
+  color: var(--lychee) !important;
+}
+
+.initial-follow.row-mid-blue h3, .row-mid-blue h2 {
+  color: var(--lychee) !important;
+}
+
+ .row-mid-blue .person a, .row-mid-blue .meta-info a {
+   color: var(--lychee) !important;
+   text-decoration: underline;
+ }
+
+
+/* row choco blue */
+
+.row-choco-blue {
+  background-color: var(--choco-blue) !important;
+  color: var(--lychee) !important;
+}
+
+.row-choco-blue .navbar-light .navbar-toggler-icon {
+  background-image: url("../img/hamburger-white.svg") !important;
+}
+
+
+.initial.row-choco-blue a.logo {
+  background-image: url("../img/logo-white.svg");
+}
+
+.row-choco-blue .btn.btn-primary, .row-choco-blue a.nav-link.login {
+  background-color: var(--choco-mid-blue) !important;
+}
+
+.row-choco-blue .btn.btn-primary:hover, .row-choco-blue a.nav-link.login:hover {
+  background-color: var(--choco-dark-blue) !important;
+}
+
+.row-choco-blue .navbar-nav .nav-item a.nav-link.active, .row-choco-blue .navbar-nav .nav-item a.nav-link:hover,  body.show-stories .row-choco-blue .navbar-nav .nav-item.stories a  {
+  border-bottom: 3px solid var(--lychee) !important;
+}
+
+.row-choco-blue .intro {
+  color: var(--beige) !important;
+}
+
+.row-choco-blue .person a, .row-choco-blue .meta-info a {
+  color: var(--beige) !important;
+  text-decoration: underline;
+}
+
+.row-choco-blue h2, .row-choco-blue h3 {
+  color: var(--lychee) !important;
+}
+
+.row-choco-blue .item .intro, .row-choco-blue .item a {
+  color: var(--lychee);
+}
+
+.row-choco-blue .item a:hover {
+  text-decoration: none;
+  color: var(--beige);
+}
+
+.initial-follow.row-choco-blue, .initial-follow.row-choco-blue a, .initial-follow.row-choco-blue .intro {
+  background-color: var(--beige) !important;
+  color: var(--choco-dark-blue) !important;
+}
+
+.initial-follow.row-choco-blue a.btn {
+  color: var(--beige) !important;
+}
+
+.initial-follow.row-choco-blue h3 {
+  color: var(--choco-blue) !important;
+}
+
+
+
+/* row light-blue */
+
+.row-light-blue {
+  background-color: var(--choco-light-blue) !important;
+  color: var(--choco-mid-blue) !important;
+}
+
+.row-light-blue .navbar-light .navbar-toggler-icon {
+  background-image: url("../img/hamburger-blue.svg") !important;
+}
+
+
+.row-light-blue .navbar-nav .nav-item a.nav-link, .row-light-blue .navbar-nav .nav-item a.nav-link.active, .row-light-blue .navbar-nav .nav-item a.nav-link:hover {
+  color: var(--choco-mid-blue) !important;
+}
+
+.row-light-blue .navbar-nav .nav-item a.nav-link.active, .row-light-blue .navbar-nav .nav-item a.nav-link:hover {
+  border-bottom: 3px solid var(--choco-mid-blue) !important;
+}
+
+.row-light-blue .btn.btn-primary, .row-light-blue .navbar-nav .nav-item a.nav-link.login {
+  color: var(--beige) !important;
+}
+
+.row-light-blue .navbar-nav .nav-item a.nav-link.login:hover {
+  background-color: var(--choco-mid-blue) !important;
+  border-bottom: 3px solid var(--choco-mid-blue) !important;
+}
+
+.row-light-blue .item .intro, .row-light-blue .item a {
+  color: var(--choco-mid-blue);
+}
+
+.row-light-blue .meta-info a {
+  color: var(--choco-mid-blue) !important;
+  text-decoration: underline;
+}
+
+.row-light-blue .item a:hover {
+  text-decoration: none;
+  color: var(--choco-dark-blue);
+}
+
+.initial-follow.row-light-blue, .initial-follow.row-light-blue a, .initial-follow.row-light-blue .intro {
+  background-color: var(--choco-dark-blue) !important;
+  color: var(--lychee) !important;
+}
+
+.initial-follow.row-light-blue h3 {
+  color: var(--lychee) !important;
+}
+
+/* row dark-blue */
+
+.row-dark-blue {
+  background-color: var(--choco-dark-blue) !important;
+  color: var(--lychee) !important;
+}
+
+
+.row-dark-blue .navbar-light .navbar-toggler-icon {
+  background-image: url("../img/hamburger-blue.svg") !important;
+}
+
+
+.row-dark-blue .btn.btn-primary:hover, .row-dark-blue a.nav-link.login:hover {
+  background-color: var(--lychee) !important;
+  color: var(--choco-mid-blue) !important;
+}
+
+.row-dark-blue .navbar-nav .nav-item a.nav-link.login:hover {
+  background-color: var(--lychee) !important;
+  border-bottom: 3px solid var(--lychee) !important;
+}
+
+.row-dark-blue .item .intro, .row-dark-blue .item a, .item.row-dark-blue .intro, .item .row-dark-blue .intro, .item .row-dark-blue h3 {
+  color: var(--lychee) !important;
+}
+
+.row-dark-blue .item a:hover {
+  text-decoration: none;
+  color: var(--beige);
+}
+
+.initial-follow.row-dark-blue, .initial-follow.row-dark-blue a, .initial-follow.row-dark-blue .intro {
+  background-color: var(--choco-blue) !important;
+  color: var(--lychee) !important;
+}
+
+.initial-follow.row-dark-blue h2, .row-dark-blue h2 {
+  color: var(--lychee) !important;
+}
+
+.row-dark-blue .meta-info a {
+  color: var(--lychee) !important;
+  text-decoration: underline;
+}
+
+/* row white */
+
+.row-white {
+  background: #fff !important;
+  color: var(--choco-dark-blue) !important;
+}
+
+.row-white .navbar-light .navbar-toggler-icon {
+  background-image: url("../img/hamburger-blue.svg") !important;
+}
+
+
+.row-white .navbar-nav .nav-item a.nav-link, .row-white .navbar-nav .nav-item a.nav-link.active, .row-white .navbar-nav .nav-item a.nav-link:hover {
+  color: var(--choco-dark-blue) !important;
+}
+
+.row-white .navbar-nav .nav-item a.nav-link.active, .row-white .navbar-nav .nav-item a.nav-link:hover {
+  border-bottom: 3px solid var(--choco-mid-blue) !important;
+}
+
+.row-white .btn.btn-primary, .row-white .navbar-nav .nav-item a.nav-link.login {
+  color: #fff !important;
+}
+
+.row-white .navbar-nav .nav-item a.nav-link.login:hover {
+  background-color: var(--choco-mid-blue) !important;
+  border-bottom: 3px solid var(--choco-mid-blue) !important;
+}
+
+.row-white h2, .row-white h3 {
+  color: var(--choco-blue);
+}
+
+.row-white h2.dark-text, .row-white h3.dark-text {
+  color: var(--choco-mid-blue);
+}
+
+.row-white .meta-info a {
+  color: var(--choco-mid-blue) !important;
+  text-decoration: underline;
+}
+
+.row-white .item .intro, .row-white .item a, .component.section-2to3noimages.row-white .item h3 {
+  color: var(--choco-dark-blue);
+}
+
+.row-white .item a:hover {
+  text-decoration: none;
+  color: var(--choco-dark-blue);
+}
+
+.initial-follow.row-white, .initial-follow.row-white a, .initial-follow.row-white .intro {
+  background-color: var(--choco-mid-blue) !important;
+  color: #fff !important;
+}
+
+
+/* row beige */
+
+.row-beige {
+  background-color: var(--beige) !important;
+  color: var(--choco-mid-blue) !important;
+}
+
+.row-beige .navbar-light .navbar-toggler-icon {
+  background-image: url("../img/hamburger-blue.svg") !important;
+}
+
+
+.row-beige .navbar-nav .nav-item a.nav-link, .row-beige .navbar-nav .nav-item a.nav-link.active, .row-beige .navbar-nav .nav-item a.nav-link:hover {
+  color: var(--choco-mid-blue) !important;
+}
+
+.row-beige .navbar-nav .nav-item a.nav-link.active, .row-beige .navbar-nav .nav-item a.nav-link:hover {
+  border-bottom: 3px solid var(--choco-mid-blue) !important;
+}
+
+.row-beige .btn.btn-primary, .row-beige .navbar-nav .nav-item a.nav-link.login {
+  color: var(--beige) !important;
+}
+
+.row-beige .navbar-nav .nav-item a.nav-link.login:hover {
+  background-color: var(--choco-mid-blue) !important;
+  border-bottom: 3px solid var(--choco-mid-blue) !important;
+}
+
+.row-beige .item .intro, .row-beige .item a {
+  color: var(--choco-dark-blue);
+}
+
+.row-beige .meta-info a {
+  color: var(--choco-dark-blue) !important;
+  text-decoration: underline;
+}
+
+.row-beige .item a:hover,  {
+  text-decoration: none;
+  color: var(--choco-dark-blue);
+}
+
+.row-beige h2.dark-text, .row-beige h3.dark-text {
+  color: var(--choco-mid-blue);
+}
+
+.initial-follow.row-beige, .initial-follow.row-beige a, .initial-follow.row-beige .intro {
+  background-color: var(--choco-mid-blue) !important;
+  color: var(--beige) !important;
+}
+
+.row-beige h1, .row-beige h2, .row-beige h3 {
+  color: var(--choco-blue);
+}
+
+/* row lychee */
+
+.row-lychee {
+  background-color: var(--lychee) !important;
+  color: var(--choco-mid-blue) !important;
+}
+
+.row-lychee .navbar-light .navbar-toggler-icon {
+  background-image: url("../img/hamburger-blue.svg") !important;
+}
+
+.row-lychee .navbar-nav .nav-item a.nav-link, .row-lychee .navbar-nav .nav-item a.nav-link.active, .row-lychee .navbar-nav .nav-item a.nav-link:hover {
+  color: var(--choco-mid-blue) !important;
+}
+
+.row-lychee .navbar-nav .nav-item a.nav-link.active, .row-lychee .navbar-nav .nav-item a.nav-link:hover, body.show-stories .row-lychee .navbar-nav .nav-item.stories a {
+  border-bottom: 3px solid var(--choco-mid-blue) !important;
+}
+
+.row-lychee .btn.btn-primary, .row-lychee .navbar-nav .nav-item a.nav-link.login {
+  color: var(--beige) !important;
+}
+
+
+.row-lychee .navbar-nav .nav-item a.nav-link.login:hover {
+  background-color: var(--choco-mid-blue) !important;
+  border-bottom: 3px solid var(--choco-mid-blue) !important;
+}
+
+.row-lychee .item .intro, .row-lychee .item a, .component.section-2to3noimages.row-lychee .item h3 {
+  color: var(--choco-mid-blue);
+}
+
+.row-lychee .meta-info a {
+  color: var(--choco-mid-blue) !important;
+  text-decoration: underline;
+}
+
+.row-lychee .item a:hover {
+  text-decoration: none;
+  color: var(--choco-dark-blue);
+}
+
+.initial-follow.row-lychee, .initial-follow.row-lychee a, .initial-follow.row-lychee .intro {
+  background-color: var(--choco-mid-blue) !important;
+  color: var(--lychee) !important;
+}
+
+.initial-follow.row-lychee h2 {
+  color: var(--lychee) !important;
+}

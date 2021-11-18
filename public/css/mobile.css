@@ -1,0 +1,90 @@
+@media only screen and (max-width: 768px) {
+  .btn.btn-primary {
+    margin-bottom: 14px !important;
+    margin-right: 0px !important;
+  }
+
+  .initial .btn-container {
+    display: block;
+  }
+
+  .appStoreLink {
+    margin: 0 auto 14px auto !important;
+    display: block;
+    text-align: center;
+  }
+
+  section.component {
+    padding: 40px 15px !important;
+  }
+
+  section.component.no-padding {
+    padding: 0 !important;
+  }
+
+
+  .story-item {
+    margin-bottom: 20px;
+  }
+
+  .buyersandsuppliers .item {
+    height: 120px;
+    padding-top: 45px;
+  }
+
+}
+
+@media only screen and (max-width: 576px) {
+  .section-testimonials .plates {
+    display: none;
+  }
+
+  .section-testimonials .testimonial-image {
+    height: 200px;
+    background-size: contain;
+    margin-top: 20px;
+  }
+
+  .section-testimonials .testimonial-item span.person {
+    width: 95%;
+    font-size: 18px;
+  }
+
+  .section-testimonials .testimonial-item h3 {
+    font-size: 21px !important;
+  }
+
+  .section-testimonials .testimonial-item {
+    height: 300px;
+  }
+
+  .footer .footer-horizontal.imprint a {
+    display: block;
+    margin: 0 !important;
+  }
+
+  .footer .footer-horizontal .social a {
+    margin: 30px 10px 0 0 !important;
+  }
+
+  .contact-form label {
+    display: none !important;
+  }
+
+  .diagonal-box .inner {
+    transform: skewY(3deg);
+    height: 60px;
+    position: absolute;
+    top: -25px;
+    width: 100%;
+  }
+
+  .diagonal-box.high .inner {
+    height: 400px;
+  }
+
+  section.sectionBlock.component {
+    padding: 40px 30px !important;
+  }
+
+}

@@ -1,0 +1,345 @@
+/* section 2to3 */
+
+.component.section2to3 .item {
+  padding: 0 2em;
+}
+
+.component.section2to3 .item img {
+  width: 100% !important;
+}
+
+.component.section2to3 .item h3 {
+  font-size: 28px;
+  font-family: 'Patron Bold', Helvetica, sans-serif !important;
+}
+
+@media only screen and (max-width: 999px) {
+  .component.section2to3 .item {
+    padding: 0 1em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .component.section2to3 .item {
+    padding: 0 1em 4em 1em;
+  }
+
+  .component.section2to3 .item.last-item {
+    padding-bottom: 0;
+  }
+}
+
+/* section photo */
+
+.sectionphoto {
+  background-size: cover;
+  background-position: center;
+}
+
+.sectionphoto .main-row {
+  min-height: 500px;
+}
+
+@media only screen and (max-width: 768px) {
+  .sectionphoto .main-row {
+    min-height: 80vw !important;
+  }
+}
+
+/* section 2to3 no image */
+
+.component.section2to3NoImages .item h3 {
+  font-size: 40px;
+  font-family: 'Triade Upright', Helvetica, sans-serif !important;
+  text-transform: uppercase;
+  margin: 1em 0 .5em 0!important;
+}
+
+/* section block */
+
+.component.sectionBlock .last-item {
+  margin-bottom: 0 !important;
+}
+
+.component.sectionBlock .item.last-item {
+  margin-bottom: 0em;
+}
+
+.component.sectionBlock .item .block-image {
+  width: 550px;
+  height: 500px;
+}
+
+@media only screen and (max-width: 768px) {
+  .component.sectionBlock .item .block-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* section stories */
+
+@media only screen and (max-width: 768px) {
+  .component.sectionCategoryList, .component.storySection {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
+.story-item .story-intro {
+  background: var(--beige);
+  padding: 16px 24px;
+  display: block;
+  height: 180px;
+  overflow: hidden;
+  line-height: 1.2em;
+  color: var(--choco-mid-blue);
+}
+
+.story-item .category {
+  font-size: 16px !important;
+}
+
+.story-item h5 {
+  color: var(--choco-mid-blue);
+  font-family: 'Patron Bold';
+  font-size: 24px !important;
+  margin-bottom: 8px;
+}
+
+.story-item a:hover {
+  text-decoration: none !important;
+}
+
+.story-item a:hover .story-intro {
+  background: var(--beige-darker);
+}
+
+.story-item img {
+  width: 100%;
+}
+
+
+/* section leftrightleft */
+
+.sectionLeftRightLeft .item img {
+  width: 100%;
+}
+
+.sectionLeftRightLeft .item.last-item {
+  margin-bottom: 0 !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .sectionLeftRightLeft .item img {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+}
+
+/* section sectionleftrightleftwithlargeimage */
+
+section.component.sectionLeftRightLeftWithLargeImage {
+  padding: 0 !important;
+}
+
+.component.sectionLeftRightLeftWithLargeImage .item img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .component.sectionLeftRightLeftWithLargeImage .item .text-column {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+  }
+
+  .component.sectionLeftRightLeftWithLargeImage .item .text-column h1, .component.sectionLeftRightLeftWithLargeImage .item .text-column h3, .component.sectionLeftRightLeftWithLargeImage .item .text-column .intro {
+    text-align: center !important;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .component.sectionLeftRightLeftWithLargeImage .item img {
+    margin-top: 50px !important;
+    height: 40vw;
+    width: 40vw;
+  }
+}
+
+/* section press */
+
+.sectionPartners .item img {
+  width: 240px;
+  height: auto;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .sectionPartners .item img {
+    width: auto;
+    max-height: 120px;
+  }
+}
+
+/* section press */
+
+
+.sectionPress .item img {
+  width: 240px;
+  height: auto;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .sectionPress .item img {
+    width: auto;
+    max-height: 120px;
+  }
+}
+
+
+/* section SingleLeftLeft */
+
+.sectionSingleLeftLeft .item h1 {
+  font-size: 3.5em !important;
+}
+
+.sectionSingleLeftLeft .item .block-image {
+  width: 80%;
+  margin: auto;
+}
+
+
+/* section single story */
+
+.sectionSingleStory .item .content-row, .singleStory .item .content-row {
+  height: 100%;
+}
+
+.sectionSingleStory a:hover, .singleStory a:hover {
+  text-decoration: none;
+}
+
+/* section testimonials */
+
+.section-testimonials {
+  overflow: hidden !important;
+}
+
+.section-testimonials .item {
+  position: relative;
+  z-index: 2000;
+}
+
+.section-testimonials .testimonial-item h2, .section-testimonials .testimonial-item h3 {
+  text-transform: none;
+  font-family:'Patron Bold' !important;
+  line-height: 1.1em !important;
+}
+
+.section-testimonials .testimonial-item {
+  height: 560px;
+}
+
+.section-testimonials .testimonial-item span.person {
+  font-size: 21px;
+  line-height: 1.3em;
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+}
+
+.section-testimonials .testimonial-item span.name {
+  font-style: italic;
+}
+
+.section-testimonials .testimonial-image {
+  height: 560px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 70%;
+}
+
+
+.section-testimonials .plates {
+  width: 355px;
+  height: 380px;
+  position: absolute;
+  right: 0px;
+  margin-top: -240px;
+  z-index: 990;
+  background-image: url("../img/plates.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 110%;
+}
+
+@media only screen and (max-width: 768px) {
+  .section-testimonials .plates {
+    width: 225px;
+    height: 350px;
+    background-size: 130%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .section-testimonials .plates {
+    width: 285px;
+    background-size: 130%;
+  }
+}
+
+.carousel-control-next, .carousel-control-prev {
+  width: 30px;
+}
+
+.carousel-control-next {
+  margin-right: -20px;
+}
+
+.carousel-control-prev {
+  margin-left: -20px;
+}
+
+.carousel-control-prev-icon {
+  position: absolute;
+  left: 5px;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/prev.svg");
+  background-size: 25px;
+}
+
+.carousel-control-next-icon {
+  position: absolute;
+  right: 5px;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/next.svg");
+  background-size: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  .carousel-control-prev-icon {
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+  }
+
+  .carousel-control-next-icon {
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+  }
+}
+
+/* section countries */
+.country-item {
+  height: 300px;
+}
+
+.country-item h3 {
+
+}

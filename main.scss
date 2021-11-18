@@ -1,0 +1,466 @@
+@font-face {font-family: "Begum"; src: url("../fonts/begum.eot"); src: url("../fonts/begum-iefix.eot") format("embedded-opentype"), url("../fonts/begum.woff2") format("woff2"), url("../fonts/begum.woff") format("woff"), url("../fonts/begum.ttf") format("truetype"), url("../fonts/begum.svg") format("svg"); }
+@font-face {font-family: "Patron"; font-weight: bold; src: url("../fonts/Patron-Bold.ttf") format("truetype") }
+@font-face {
+    font-family: 'Patron';
+    src: url('../fonts/Patron-Regular.woff2') format('woff2'),
+        url('../fonts/Patron-Regular.woff') format('woff'),
+        url('../fonts/Patron-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TriadeChoco';
+    src: url('../fonts/TriadeChoco-Backslant.woff2') format('woff2'),
+        url('../fonts/TriadeChoco-Backslant.woff') format('woff'),
+        url('../fonts/TriadeChoco-Backslant.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TriadeChocoUpright';
+    src: url('../fonts/TriadeChoco-Upright.woff2') format('woff2'),
+        url('../fonts/TriadeChoco-Upright.woff') format('woff'),
+        url('../fonts/TriadeChoco-Upright.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+$cm1: #18003F;
+$cm2: #2A4DE4;
+$cm3: #C0D5FF;
+
+$cb1: #2A4DE4;
+$cb2: #1537C7;
+
+$cs1: #E5E5E5;
+$cs2: #91A5F9;
+
+$ce1: #FFF0ED;
+$ce2: #B71000;
+
+body{
+    background-color: #E6E6E6;
+    font-family: 'Patron', sans-serif;
+}
+
+#headerText {
+    font-family: 'TriadeChocoUpright', sans-serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    line-height: 38px;
+    margin-top: 75px;
+
+    @media (max-width: 767px){
+        font-size: 24px;
+        line-height: 28px;
+        margin-top: 60px;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        font-size: 20px;
+        line-height: 21px;
+        margin-top: 60px;
+    }
+}
+
+#headerSubtext{
+    margin-top: 52px;
+    line-height: 32px;
+
+    @media (max-width: 767px){
+        line-height: 19px;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        font-size: 13px;
+        line-height: 17px;
+        margin-top: 30px;
+    }
+}
+
+#choco-logo {
+    width: 125px;
+    height: 60.95px;
+
+    @media(max-width: 991px){
+        width: 68px;
+        height: 33.16px;
+    }
+
+    @media(min-width: 992px) and (max-width: 1399px){
+        width: 100px;
+        height: 48.77px;
+    }
+}
+
+#doordash-logo {
+    width: 250px;
+    align-self: center;
+
+    @media(max-width: 991px){
+        width: 137px;
+    }
+
+    @media(min-width: 992px) and (max-width: 1399px){
+        width: 175px;
+    }
+}
+
+h2{
+    font-family:  'Patron', sans-serif;
+    font-size: 24px;
+
+    @media (max-width: 767px){
+        line-height: 19px;
+        font-size: 18px;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        font-size: 13px;
+        line-height: 17px;
+    }
+}
+
+h4 {
+    font-size: 24px;
+    font-family: 'Patron', sans-serif;
+
+    @media(max-width: 767px){
+        font-size: 18px;
+    }
+}
+
+
+.frame{
+    padding: 60px 110px;
+    background-color: #F7F7F7;
+
+    @media(max-width: 991px){
+        padding: 60px 57px;
+    }
+
+    @media(min-width: 992px) and (max-width: 1199px){
+        padding: 60px 80px
+    }
+}
+
+#frame1{
+    order: 1;
+
+    @media(max-width: 991px){
+        padding-top: 30px;
+    }
+}
+
+#frame2{
+    background-image: url('/files/images/choco-doordash-brown-paper-bag.jpg');
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    padding: 0;
+    min-height: 365px;
+    order: 2;
+}
+
+#frame3{
+    background-image: url('/files/images/choco-doordash-warenkorb.png');
+    background-size: auto 600px;
+    background-position-y: 75px;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-color: #3D6BFF;
+    padding: 0;
+    min-height: 365px;
+    order: 3;
+
+    @media(max-width: 767px){
+        order: 4;
+        background-size: auto 95%;
+        background-position-y: center;
+    }
+}
+
+#frame4{
+    order: 4;
+
+    @media(max-width: 767px){
+        background-color: #ffffff;
+        padding: 60px 35px 60px 35px;
+        order: 3;
+    }
+}
+
+.bg-1, .bg-2{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.bg-1{
+    background-color: $cm3;
+    left: 0;
+}
+
+.bg-2{
+    background-color: #ffffff;
+    right: 0;
+
+    @media(max-width: 767px){
+        background-color: $cm3;
+    }
+}
+
+#main-banner{
+    max-height: 736px;
+    max-width: 100%;
+}
+
+#signUpBtn{
+    background-color: $cb1;
+    padding: 15px 35px;
+    color: #ffffff;
+    border-radius: 28px;
+    letter-spacing: 1.25px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: bold;
+    border: none;
+}
+
+#form {
+    padding-top: 15px;
+    margin-bottom: 30px;
+
+    @media(max-width: 767px){
+        margin-bottom: 22px;
+    }
+
+    label {
+        padding-left: 30px;
+        color: #828282;
+
+        &.cb-label{
+            padding-left: 10px;
+        }
+    }
+
+    input{
+        font-size: 16px;
+        border-radius: 8px;
+        border: 2px solid $cs1;
+
+        &::placeholder {
+            color: #828282;
+        }
+
+        &:hover{
+            border-color: $cs2;
+        }
+
+        &:focus{
+            color: #333333;
+        }
+
+        &.error{
+            border-color: $ce2;
+            background-color: $ce1;
+
+            &::placeholder {
+                color: #333333;
+            }
+        }
+    }
+}
+
+#footer {
+    background-color: #E0EAFF;
+    padding: 60px 50px;
+
+    > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media(max-width: 767px){
+            flex-direction: column;
+            align-items: start;
+        }
+    }
+
+    ul {
+        margin: 0;
+
+        @media(max-width: 767px){
+            padding: 0;
+            margin-bottom: 15px;
+        }
+    }
+
+    li {
+        display: inline-block;
+        color: #000000;
+        margin-right: 20px;
+        font-size: 13px;
+        line-height: 18px;
+
+        @media(max-width: 767px){
+            display: block;
+            line-height: 24px;
+
+            &:nth-child(1){
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+#socialmedia{
+    flex-basis: 100px;
+    a {
+        text-decoration: none;
+    }
+}
+
+#fb, #instagram {
+    height: 22px;
+}
+
+#fb {
+    margin-right: 18px;
+
+    @media(max-width: 767px){
+        margin-right: 12px;
+    }
+
+    @media(min-width: 768px) and (max-width: 991px) {
+        margin-right: 14px;
+    }
+}
+
+span.error{
+    display: inline-block;
+    font-size: 14px;
+    display: none;
+    color: $ce2;
+
+    &::before{
+        display: inline-block;
+        background: #B71000;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        line-height: 16px;
+        text-align: center;
+        color: white;
+        font-family: monospace;
+        content: "!";
+        margin-right: 7px;
+    }
+}
+
+.field{
+    margin-bottom: 10px;
+}
+
+#thankyou-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 120, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    display: none;
+}
+
+#thankyou{
+    margin-top: 100px;
+    width: 90vw;
+    max-width: 750px;
+    padding: 60px 103px 60px 60px;
+    background-color: #3D6BFF;
+    background-image: url("/files/images/clock.png");
+  	background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 105%;
+    position: relative;
+    top: -800px;
+    transition: top 1s ease;
+    color: white;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.35);
+
+    @media(max-width: 575px){
+        padding: 55px 44px 60px 44px;
+        background-image: none;
+    }
+
+    h1 {
+        font-family: 'TriadeChocoUpright';
+        font-size: 36px;
+        line-height: 38px;
+
+        @media(max-width: 460px){
+            font-size: 28px;
+            line-height: 32px;
+        }
+    }
+
+    button {
+        padding: 15px 25px;
+        border-radius: 100px;
+        border-style: none;
+        margin-top: 30px;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 1.25px;
+        color: #000000;
+
+        @media(max-width: 460px){
+            margin-top: 30px;
+        }
+    }
+}
+
+.closeBtn{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 7px;
+    right: 20px;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 27px;
+
+    &:hover{
+        color: black;
+    }
+}
+
+.dropdown-toggle, .dropdown-toggle:hover{
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 2px solid #E5E5E5;
+}
+
+.bootstrap-select{
+    width: 90px !important;
+}
+
+input[name=mobile_number]{
+    width: auto; 
+    flex-grow: 1;
+    max-width: calc(100% - 90px);
+}
+
+.btn.dropdown-toggle{
+    max-height: 40px !important;
+}

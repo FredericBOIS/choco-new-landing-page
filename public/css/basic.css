@@ -1,0 +1,481 @@
+:root {
+  --choco-blue: #3D6BFF;
+  --choco-dark-blue: #18003F;
+  --choco-mid-blue: #1A0D78;
+  --choco-light-blue: #DFEAFF;
+  --lychee: #FFE8DF;
+  --beige: #FAF7F5;
+  --beige-darker: #F3EFEC;
+}
+
+@font-face {
+  font-family:'Triade';
+  src: url('/files/fonts/TriadeChoco-Backslant.woff') format('woff');
+}
+
+@font-face {
+  font-family:'Triade Upright';
+  src: url('/files/fonts/TriadeChoco-Upright.woff') format('woff');
+}
+
+@font-face {
+  font-family:'Patron Regular';
+  src: url('/files/fonts/PatronWEB-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:'Patron Italic';
+  src: url('/files/fonts/PatronWEB-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family:'Patron Bold';
+  src: url('/files/fonts/PatronWEB-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:'Patron BoldItalic';
+  src: url('/files/fonts/PatronWEB-BoldItalic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
+
+body{
+  font-family: 'Patron Regular', Helvetica, sans-serif;
+  background-color: #2d1a4c;
+}
+
+h1 {
+  font-size: 2em !important;
+  font-family: 'Triade', sans-serif !important;
+  line-height: 0.95em !important;
+  text-transform: uppercase;
+  font-weight: 700 !important;
+  letter-spacing: .0em;
+  padding-bottom: .25em;
+}
+
+
+@media only screen and (min-width: 350px) {
+  h1 {
+    font-size: 2.5em !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 3em !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: 4em !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  h1 {
+    font-size: 5em !important;
+  }
+  h1.smaller {
+    font-size: 4.5em !important;
+  }
+  .component.smaller h1 {
+    font-size: 4em !important;
+    line-height: 1em !important;
+  }
+  .component.bigger h1 {
+    font-size: 5.5em !important;
+  }
+}
+
+h2 {
+  font-size: 1.5em !important;
+  text-transform: uppercase;
+  font-weight: 700 !important;
+  font-family: 'Triade Upright', sans-serif !important;
+  letter-spacing: .0em;
+  line-height: 1em !important;
+  padding-bottom: .25em;
+}
+
+@media only screen and (min-width: 350px) {
+  h2 {
+    font-size: 1.75em !important;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  h2 {
+    font-size: 2em !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 2.25em !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  h2 {
+    font-size: 3em !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  h2 {
+    font-size: 3.5em !important;
+  }
+}
+
+h3 {
+  font-size: 1.25em !important;
+  text-transform: uppercase;
+  font-weight: 700 !important;
+  font-family: 'Triade Upright', sans-serif !important;
+  letter-spacing: .0em;
+  line-height: 1em !important;
+  padding-bottom: .25em;
+}
+
+@media only screen and (min-width: 350px) {
+  h3 {
+    font-size: 1.75em !important;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  h3 {
+    font-size: 1.75em !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  h3 {
+    font-size: 2em !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  h3 {
+    font-size: 2.25em !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  h3 {
+    font-size: 2.5em !important;
+  }
+}
+
+h4 {
+  font-size: 1.3rem !important;
+  margin-bottom: 0.5em !important;
+  font-weight: 700 !important;
+  font-family: 'Patron Bold' !important;
+}
+
+@media only screen and (min-width: 350px) {
+  h4 {
+    font-size: 1.75em !important;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  h4 {
+    font-size: 1.75em !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  h4 {
+    font-size: 2em !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  h4 {
+    font-size: 2em !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  h4 {
+    font-size: 2.25em !important;
+  }
+}
+
+h5 {
+  font-size: 1.1rem !important;
+  margin-bottom: 0.5em !important;
+  font-weight: 700 !important;
+  font-family: 'Patron Bold' !important;
+}
+
+@media only screen and (min-width: 350px) {
+  h5 {
+    font-size: 1.5em !important;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  h5 {
+    font-size: 1.5em !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  h5 {
+    font-size: 1.7em !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  h5 {
+    font-size: 1.75em !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  h5 {
+    font-size: 1.75em !important;
+  }
+}
+
+
+body.lang-cs-CZ h1, body.lang-cs-CZ h2, body.lang-cs-CZ h3 {
+  line-height: 1.07em !important;
+}
+
+.intro {
+  font-size: 1.1em;
+  line-height: 1.3em;
+}
+
+@media only screen and (min-width: 576px) {
+  .intro {
+    font-size: 1.3em !important;
+  }
+}
+
+
+.btn.btn-primary, #elc-cookie-consent .elc-button-link {
+  font-size: 21px;
+  border-radius: 30px !important;
+  padding: 10px 40px;
+  margin: 0 20px 0 0;
+  border: 0 !important;
+  background-color: var(--choco-blue) !important;
+}
+
+.btn.btn-primary:hover {
+  background-color: var(--choco-mid-blue) !important;
+}
+
+.appStoreLink {
+  margin: 0 20px 0 0;
+}
+
+.more-link {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+
+.diagonal-box {
+  position: relative;
+  height: 0px;
+  z-index: 980;
+}
+
+.diagonal-box .inner {
+  transform: skewY(3deg);
+  height: 100px;
+  position: absolute;
+  top: -50px;
+  width: 100%;
+}
+
+.diagonal-box.high .inner {
+  height: 400px;
+}
+
+.diagonal-box.flipped .inner {
+  transform: skewY(-3deg);
+}
+
+.extra-space {
+  padding-top: 86px !important;
+}
+
+.z-back {
+  z-index: 0;
+}
+
+.z-middle {
+  position: relative;
+  z-index: 1020;
+}
+
+.z-front {
+  position: relative;
+  z-index: 1040;
+}
+
+body.choco {
+  font-family: 'Patron Regular', Helvetica, sans-serif;
+  color: #18003F;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+a:hover {
+  transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+strong {
+  font-family: 'Patron Bold';
+}
+
+
+.gradient {
+  position: absolute;
+  background: linear-gradient(180deg, rgba(24,0,63,0.5) 0%, rgba(24,0,63,0) 100%);
+  width: 100%;
+  height: 160px;
+}
+
+.img-center {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+section.component {
+  width: 100%;
+  padding: 7em 0em 7em;
+  overflow: hidden;
+}
+
+label {
+  margin: 0 0 2px 2px;
+}
+
+hr {
+  border-color: var(--choco-light-blue);
+  opacity: .3;
+}
+
+.form-check-input {
+  margin-left: -1rem !important;
+  margin-top: 6px !important;
+}
+
+.form-check-label {
+  margin-left: .5rem !important;
+  margin-top: 1px !important;
+}
+
+.modal-open .modal {
+  background: rgba(24, 0, 63, 0.8);
+}
+.form-control {
+  height: 50px;
+  border-color: var(--choco-light-blue);
+  border-radius: 0;
+  margin-bottom: 20px;
+}
+
+.no-padding {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.no-padding-top {
+  padding-top: 0 !important;
+}
+
+.no-padding-bottom {
+  padding-bottom: 0 !important;
+}
+
+.less-padding-bottom {
+  padding-bottom: 2em !important;
+}
+
+.more-link {
+  font-size: 1.3em;
+  color: var(--choco-blue);
+}
+
+.more-link:hover {
+  color: var(--choco-mid-blue);
+}
+
+div.category {
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+
+.iti {
+  display: block !important;
+}
+
+.iti__flag-container {
+  outline: none !important;
+}
+
+.hide {
+  display: none;
+}
+
+
+#thank-you .modal-content{
+  background-color: #1A0D78;
+  padding: 80px;
+  margin-top: 70px;
+}
+
+@media(max-width: 398px){
+  #thank-you .modal-content{
+    padding: 80px 40px;
+  }
+}
+
+#thank-you .modal-body{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.modalCloseBtn{
+  color: white;
+  font-size: 45px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
