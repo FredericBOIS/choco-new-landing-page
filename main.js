@@ -34,12 +34,14 @@ server.post('/signup', async (req, res) => {
     try {
         const cust = req.body;
         await db.customers.create({
-            firstname: cust.firstName,
-            lastname: cust.lastName,
-            company: cust.company,
+            restaurantName: cust.restaurantName,
             email: cust.email,
             phone: cust.phone,
-            industry: cust.industry,
+            street: cust.street,
+            streetNumber: cust.streetNumber,
+            zip: cust.zip,
+            country: cust.country,
+            city: cust.city,
         });
 
         res.end();
@@ -91,5 +93,6 @@ server.use('/files', express.static(path.dirname(require.main.filename) + '/publ
 
 
 server.use('*', async (req, res) => {
+    res.status(404);
     res.sendFile('notfound.html', { root: __dirname });
 });

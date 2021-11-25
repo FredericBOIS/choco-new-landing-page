@@ -11,17 +11,18 @@
     <link href="/files/css/style.css" rel="stylesheet" type="text/css">
     <link href="/files/css/sections.css" rel="stylesheet" type="text/css">
     <link href="/files/css/mobile.css" rel="stylesheet" type="text/css">
+    <link href="/files/country-picker-flags/css/countrySelect.min.css" rel="stylesheet" type="text/css">
+
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <!-- <script>
-        !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.13.1";
-        analytics.load("ZlYOGu7bHOF50nTOmUMMcad1sm3qIxoS");
-        analytics.page();
-        }}();
-      </script> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/files/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/files/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/files/img/favicon-16x16.png">
+    <link rel="manifest" href="/files/site.webmanifest">
 </head>
 
 <body>
-    <div class="modal fade show" id="contact" tabindex="-1" aria-labelledby="contactModalLabel" aria-modal="true" role="dialog">
+    <div class="modal fade show" id="contact" tabindex="-1" aria-labelledby="contactModalLabel" aria-modal="true"
+        role="dialog">
         <div class="modal-dialog modal-lg">
 
             <div class="modal-content row-beige p-2 pt-4  pt-5">
@@ -36,196 +37,80 @@
                             </div>
                         </div>
 
-                        <div class="pfah-wrapper demo" data-state="no" data-error="keep" data-source="source"
-                            data-id="pfah-c69s4">
-                            <form method="POST" id="pardot-form" class="pfah-form"><input type="hidden" name="source"
-                                    value="/de/en/restaurants">
+                        <div data-state="no" data-error="keep" data-source="source">
+                            <form method="POST">
                                 <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="pfah-row form-group">
-                                            <label class="pfah-label">First name *</label>
-                                            <input type="text" class="pfah-input form-control" name="firstName"
-                                                id="firstName" placeholder="" required="">
-                                        </div>
-                                        <div class="pfah-row form-group">
-                                            <label class="pfah-label">Last name *</label>
-                                            <input type="text" class="pfah-input form-control" name="lastName"
-                                                id="lastName" placeholder="" required="">
-                                        </div>
-                                        <div class="pfah-row form-group">
-                                            <label class="pfah-label">Company *</label>
-                                            <input type="text" class="pfah-input form-control" name="company"
-                                                id="company" placeholder="" required="">
-                                        </div>
+                                    <div class="col-12 col-md-4 field">
+                                        <label>Restaurant name *
+                                            <input type="text" class="form-control" name="restaurantName" placeholder="" required="">
+                                        </label>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="pfah-row form-group">
-                                            <label class="pfah-label">Email *</label>
-                                            <input type="email" class="pfah-input form-control" name="email" id="email"
-                                                placeholder="" required="">
-                                        </div>
-
-                                        <input type="hidden" name="utm_source" id="utmsource" value="undefined">
-                                        <input type="hidden" name="utm_medium" id="utmmedium" value="undefined">
-                                        <input type="hidden" name="utm_campaign" id="utmcampaign" value="undefined">
-                                        <input type="hidden" name="landing_page" id="landingpage" value="undefined">
-
-                                        <div class="pfah-row form-group">
-                                            <label class="pfah-label">Phone number *</label>
-                                            <span id="valid-msg" class="hide">✓</span>
-                                            <input id="phone" name="intl_phone" type="tel"
-                                            class="pfah-input form-control" required="" autocomplete="off">
-                                            <link rel="stylesheet" href="/files/js/intl-tel-input/intlTelInput.min.css">
-                                            <script src="/files/js/intl-tel-input/intlTelInput.min.js"></script>
-                                            <script>
-                                                var input = document.querySelector("#phone"),
-                                                    validMsg = document.querySelector("#valid-msg");
-
-                                                var iti = window.intlTelInput(input, {
-                                                    initialCountry: "auto",
-                                                    geoIpLookup: function (success) {
-                                                        // Get your api-key at https://ipdata.co/
-                                                        fetch("https://api.ipdata.co/?api-key=47eb15b0140bb9a8c9704f7641fdbc257cec4c4e48f4dd8f5764dce1")
-                                                            .then(function (response) {
-                                                                if (!response.ok) return success("");
-                                                                return response.json();
-                                                            })
-                                                            .then(function (ipdata) {
-                                                                success(ipdata.country_code);
-                                                            });
-                                                    },
-                                                    hiddenInput: "phone",
-                                                    utilsScript: "/files/js/intl-tel-input/utils.min.js",
-                                                });
-
-                                                var reset = function () { validMsg.classList.add("hide") };
-
-                                                input.addEventListener('blur', function () {
-                                                    reset();
-                                                    if (input.value.trim()) {
-                                                        if (iti.isValidNumber()) { validMsg.classList.remove("hide") }
-                                                    }
-                                                });
-
-                                                var handleChange = function () {
-                                                    phoneNumber = (iti.isValidNumber()) ? iti.getNumber() : document.getElementById('phone').value;
-                                                };
-
-                                                input.addEventListener('change', handleChange);
-                                                input.addEventListener('keyup', handleChange);
-                                            </script>
-                                        </div>
-                                        <div class="pfah-row form-group">
-                                            <label for="iAm">I am / represent a *</label>
-                                            <select class="form-control form-control" id="iAmSelect" name="industry"
-                                                required="">
-                                                <option value="">Please select</option>
-                                                <option value="restaurant">Restaurant</option>
-                                                <option value="supplier">Supplier</option>
-                                                <option value="applicant">Applicant</option>
-                                                <option value="journalist">Journalist</option>
-                                                <option value="other">Other</option>
-                                            </select>
-                                        </div>
+                                    <div class="col-12 col-md-4 field">
+                                        <label>Email *
+                                            <input type="email" class="form-control" name="email" placeholder="" required="">
+                                        </label>
+                                    </div>
+                                    <div id='phoneField' class="col-12 col-md-4 field">
+                                        <label>Phone *</label>
+                                        <span id="valid-msg" class="hide">✓</span>
+                                        <input id="phone" name="intl_phone" type="tel" class="form-control"
+                                            required="" autocomplete="off">
+                                        <link rel="stylesheet" href="/files/js/intl-tel-input/intlTelInput.min.css">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-4 field">
+                                        <label>Street *
+                                            <input type="text" class="form-control" name="street" placeholder="" required="">
+                                        </label>
+                                    </div>
+                                    <div class="col-12 col-md-4 field">
+                                        <label>Street number *
+                                            <input type="text" class="form-control" name="streetNumber" placeholder="" required="">
+                                        </label>
+                                    </div>
+                                    <div class="col-12 col-md-4 field">
+                                        <label>ZIP code *
+                                            <input type="text" class="form-control" name="zip" placeholder="" required="">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-6 field">
+                                        <label>Country *
+                                            <input id="country" type="text">
+                                        </label>
+                                    </div>
+                                    <div class="col-12 col-md-6 field">
+                                        <label>City *
+                                            <input type="text" class="form-control" name="city" placeholder="" required="">
+                                        </label>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col">
-
                                         <div class="form-check">
                                             <input type="checkbox" class="form-check-input" id="exampleCheck1"
                                                 required="">
                                             <label class="form-check-label" for="exampleCheck1">
-                                                <p>I hereby accept the <a href="https://choco.com/pages/terms-and-conditions"
-                                                        target="_blank">Terms &amp; Conditions</a>.</p>
+                                                <p>
+                                                    I hereby accept the <a href="https://choco.com/pages/terms-and-conditions" target="_blank">Terms &amp; Conditions</a>.
+                                                </p>
                                             </label>
                                         </div>
-
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col text-right">
-                                        <div class="pfah-action">
-                                            <button type="submit"
-                                                class="pfah-button btn btn-primary mr-0">Submit</button>
-                                        </div>
+                                        <button type="submit" class="pfah-button btn btn-primary mr-0">Submit</button>
                                     </div>
                                 </div>
                             </form>
-
-                            <!-- <script type="text/javascript">
-                                var form = document.getElementById('pardot-form');
-                                form.addEventListener("submit", function () {
-                                    var firstName = document.getElementById('firstName').value;
-                                    var lastName = document.getElementById('lastName').value;
-                                    var company = document.getElementById('company').value;
-                                    var email = document.getElementById('email').value;
-                                    var phone = phoneNumber;
-                                    var intl_phone = document.getElementById('phone').value;
-                                    var industry = document.getElementById('iAmSelect').value;
-                                    analytics.identify({
-                                        FirstName: firstName,
-                                        LastName: lastName,
-                                        Company: company,
-                                        Email: email,
-                                        InternationalPhone: intl_phone,
-                                        Phone: phone,
-                                        Industry: industry,
-                                    })
-                                });
-                                analytics.trackForm(form, 'Pardot form submitted', {
-                                })
-                            </script> -->
-
-                            <!-- <aside class="pfah-done pfah-transition">
-                                <div class="pfah-done-wrapper">
-                                    <i class="pfah-done-icon pfah-icon"></i>
-                                    <h2 class="mb-1">Thanks</h2>
-                                    <div class="pfah-done-text mb-4">We'll be in touch shortly!</div>
-                                    <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal"
-                                        aria-label="Close">
-                                        Close
-                                    </button>
-                                </div>
-                            </aside>
-                            <aside class="pfah-error pfah-transition">
-                                <i class="pfah-error-icon pfah-icon"></i>
-                                <span class="pfah-error-text">Sorry, something went wrong. Please try again.</span>
-                            </aside> -->
                         </div>
-
-
                     </div>
                 </div>
-
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-                <!-- <script src="/files/pardot/pardot-form.js"></script> -->
-                <!--
-                  <script type="text/javascript">
-                      var form = document.getElementById('pardot-form');
-                      form.addEventListener("submit", function () {
-                        var firstName = document.getElementById('firstName').value;
-                        var lastName = document.getElementById('lastName').value;
-                        var company = document.getElementById('company').value;
-                        var email = document.getElementById('email').value;
-                        var phone = phoneNumber;
-                        var intl_phone = document.getElementById('phone').value;
-                        var industry = document.getElementById('iAmSelect').value;
-                        analytics.identify({
-                          FirstName: firstName,
-                          LastName: lastName,
-                          Company: company,
-                          Email: email,
-                          InternationalPhone: intl_phone,
-                          Phone: phone,
-                          Industry: industry,
-                        });
-                      });
-                    </script>
-                   -->
             </div>
         </div>
-
     </div>
 
     <div class="modal fade" id="thank-you" tabindex="-1">
@@ -236,9 +121,10 @@
                 </div>
                 <div class="modal-body">
                     <h1 style="font-family: 'Triade', sans-serif;">Thanks</h1>
-                    <h4 class="mt-4" style="font-family: 'Patron Bold'; text-align: center;">We'll be in touch shortly!</h4>
+                    <h4 class="mt-4" style="font-family: 'Patron Bold'; text-align: center;">We'll be in touch shortly!
+                    </h4>
                 </div>
-            </div>  
+            </div>
         </div>
     </div>
 
@@ -250,25 +136,73 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
 
+
+    <script src="/files/country-picker-flags/js/countrySelect.min.js"></script>
+    <script src="/files/js/intl-tel-input/intlTelInput.min.js"></script>
+    <script>
+        $("#country").countrySelect({
+            preferredCountries: []
+        });
+
+        var input = document.querySelector("#phone"),
+            validMsg = document.querySelector("#valid-msg");
+
+        var iti = window.intlTelInput(input, {
+            initialCountry: "auto",
+            geoIpLookup: function (success) {
+                // Get your api-key at https://ipdata.co/
+                fetch("https://api.ipdata.co/?api-key=47eb15b0140bb9a8c9704f7641fdbc257cec4c4e48f4dd8f5764dce1")
+                    .then(function (response) {
+                        if (!response.ok) return success("");
+                        return response.json();
+                    })
+                    .then(function (ipdata) {
+                        success(ipdata.country_code);
+                        $("#country").countrySelect("selectCountry",ipdata.country_code);
+                    });
+            },
+            hiddenInput: "phone",
+            utilsScript: "/files/js/intl-tel-input/utils.min.js",
+        });
+
+        var reset = function () { validMsg.classList.add("hide") };
+
+        input.addEventListener('blur', function () {
+            reset();
+            if (input.value.trim()) {
+                if (iti.isValidNumber()) { validMsg.classList.remove("hide") }
+            }
+        });
+
+        var handleChange = function () {
+            phoneNumber = (iti.isValidNumber()) ? iti.getNumber() : document.getElementById('phone').value;
+        };
+
+        input.addEventListener('change', handleChange);
+        input.addEventListener('keyup', handleChange);
+    </script>
+
     <script>
         $('#contact').modal("show");
-        $('.modalCloseBtn').click(function(e){ $(this).parents('.modal').modal('hide'); location.reload(); });
+        $('.modalCloseBtn').click(function (e) { $(this).parents('.modal').modal('hide'); location.reload(); });
 
-        $('form').submit(function(e){
+        $('form').submit(function (e) {
             e.preventDefault();
 
             var data = {
-                firstName: $('input[name=firstName]').val(),
-                lastName: $('input[name=lastName]').val(),
-                company: $('input[name=company]').val(),
+                restaurantName: $('input[name=restaurantName]').val(),
                 email: $('input[name=email]').val(),
                 phone: $('input[name=phone]').val(),
-                industry: $('select[name=industry]').val()
+                street: $('input[name=street]').val(),
+                streetNumber: $('input[name=streetNumber]').val(),
+                zip: $('input[name=zip]').val(),
+                country: $('#country').val(),
+                city: $('input[name=city]').val()
             }
 
-            $.post('/signup', data, function(e){
+            $.post('/signup', data, function (e) {
                 $('#thank-you').modal('show');
-            }).fail(function(e){
+            }).fail(function (e) {
                 Swal.fire({
                     icon: 'error',
                     title: 'Oops...',
@@ -279,4 +213,5 @@
         });
     </script>
 </body>
+
 </html>
